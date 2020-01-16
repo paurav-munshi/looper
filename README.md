@@ -1,0 +1,5 @@
+# Looper
+## Intorduction
+The Looper project is a event loop utility which could be used as an underlying mechanism for developing additional user-friendly libraries or frameworks. Though it cab be used directly by applications to leverage different flavours of event loop implementations, its highly suitable to provide a backbone for developing other framework or utilities which would be used by application teams. 
+
+The Looper is mainly inspired from various projects or platforms like Netty and Node. But additionally it also tries to provide a framework which is distributed and scalable by default. This is because it provides a distributed implementation of the event loop where a program can emit and even and that event can be handled by the same JVM, another JVM on same machine ot a different JVM on a different on a different machine all togather. 
