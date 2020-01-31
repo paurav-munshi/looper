@@ -10,7 +10,7 @@ import io.eventstack.looper.EventHandlerCache;
 
 public class SimpleEventHandlerCache implements EventHandlerCache
 {
-    private Map<String, List<EventHandler>> eventsCache = new ConcurrentHashMap<String, EventHandler>();
+    private ConcurrentHashMap<String, List<EventHandler>> eventsCache = new ConcurrentHashMap<String, List<EventHandler>>();
 
     @Override
     public void registerEvent(String eventName, EventHandler handler) throws Exception {

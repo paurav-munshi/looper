@@ -15,6 +15,7 @@ public interface EventLoop {
     public <T> void addEvent(Event<T> event) throws EventLoopException;
     public void addEventPostExecHandler(EventHandler event) throws EventLoopException;
     public void registerEventHandlerCache(EventHandlerCache cache) throws EventLoopException;
+    public void stop() throws EventLoopException;
     public long size();
 
 }

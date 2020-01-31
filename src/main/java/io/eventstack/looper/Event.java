@@ -2,7 +2,7 @@ package io.eventstack.looper;
 
 import java.util.Date;
 
-public abstract class Event<T> {
+public class Event<T> {
     protected String name;
     protected Date createdDate;
     protected T data;

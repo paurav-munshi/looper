@@ -1,6 +1,6 @@
 package io.eventstack.looper;
 
 @FunctionalInterface
-public interface EventHandler {
-    public void handleEvent(Event event);
+public interface EventHandler<T extends Object> {
+    public void handleEvent(Event<T> event);
 }
